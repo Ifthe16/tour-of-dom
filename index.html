@@ -39,14 +39,14 @@
             </ul>
         </section>
         <section class="fruits-container">
-            <h1 id="fruits-title">Fruits I like</h1>
+            <h1 id="fruits-title" class="some-class random-class blue-bg">Fruits I like</h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
                 <li>Carrot</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container" class="large-text">
             <h1 id="places-title">Places I like to visit</h1>
             <ul>
                 <li class="important-places">Soondarban</li>
@@ -55,8 +55,16 @@
                 <li class="other-place">shalbon</li>
             </ul>
         </section>
+        <section>
+            <div id="my-details">
+                <!-- my details -->
+                <h1>Name: Chinku Pinku</h1>
+                <p>Age: 12yrs</p>
+            </div>
+        </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/styleInJs.js"></script>
     <script>
         const student = {
             name: 'ABUL',
@@ -104,6 +112,19 @@
             // console.log(li);
             console.log(li.innerText);
         }
+    </script>
+    <script>
+        // getting text
+        const div = document.getElementById('my-details');
+        const text = div.innerText;
+        console.log(text);
+    </script>
+
+    <script>
+        // getting html
+        const div2 = document.getElementById('my-details');
+        const html = div2.innerHTML;
+        console.log(html);
     </script>
 </body>
 
